@@ -46,6 +46,15 @@
             padding-bottom: 8px;
         }
 
+        .vip-access {
+            font-size: 20px;
+            padding: 16px 0px;
+        }
+
+        .vip-access span {
+            font-size: 18px;
+        }
+
         @media only screen and (min-width: 768px) {
 
             .strategy-background {
@@ -61,6 +70,16 @@
 
             .package-fs {
                 font-size: 1rem;
+            }
+
+            .vip-access {
+                font-size: 20px;
+                padding: 20px 32px;
+            }
+
+            .vip-access strong {
+                text-transform: uppercase;
+                font-size: 34px;
             }
         }
     </style>
@@ -111,20 +130,24 @@
                     </div>
 
                     <div class="row justify-content-center align-items-center">
-                        <img src="./img/left-vip-access-arrow.png" alt="Arrow pointing to the VIP button"
-                            class="d-none d-md-block col-md-2" style="width: 10%; height: 20%;">
-                        <a href="getfreeaccess.com"
-                            class="btn text-center rounded text-decoration-none col-sm-8 col-md-6 col-lg-2" style="background: linear-gradient(180deg, rgba(255,163,0,1) 0%, rgba(255,122,0,1) 75%); 
-                        box-shadow: inset 0 -3px #EC5500;">
-                            <div class="text-light">
-                                <p class="fw-bolder fs-3 mt-3 mb-0">Get Free VIP Access Now</p>
-                                <p class="fw-semibold px-5" style="font-size: 1rem;">100% Free VIP ACCESS For Previous
-                                    Members
-                                </p>
-                            </div>
-                        </a>
-                        <img src="./img/vip-access-arrow.png" alt="Arrow pointing to the VIP button"
-                            class="d-none d-md-block" style="width: 10%; height: 20%;">
+                        <div class="col-auto d-none d-md-block">
+                            <img src="./img/left-vip-access-arrow.png" alt="Arrow pointing to the VIP button"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-auto">
+                            <a href="#" class="btn text-center rounded text-decoration-none text-light vip-access"
+                                style="background: linear-gradient(180deg, rgba(255,163,0,1) 0%, rgba(255,122,0,1) 75%); 
+                        box-shadow: inset 0 -3px #EC5500;"><strong>Get Free VIP Access Now</strong><br /> <span>100%
+                                    Free VIP
+                                    ACCESS For
+                                    Previous
+                                    Members</span>
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-md-block">
+                            <img src="./img/vip-access-arrow.png" alt="Arrow pointing to the VIP button"
+                                class="img-fluid">
+                        </div>
                     </div>
 
                     <div class="row justify-content-center">
