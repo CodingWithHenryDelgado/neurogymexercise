@@ -5,3 +5,68 @@ html {
 #most-popular {
     font-family: 'Nanum Pen Script', cursive;
 }
+
+.strategy-background {
+    background: url('./img/business-strategy-success-target-goals.png');
+    background-size: 100% 65%;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+footer {
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+
+footer,
+footer a {
+    color: #1b2124;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.need-help {
+    padding: 16px;
+}
+
+.pb-8 {
+    padding-bottom: 8px;
+}
+
+.vip-access {
+    font-size: 20px;
+    padding: 16px 0px;
+}
+
+.vip-access span {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .strategy-background {
+        background: url('./img/business-strategy-success-target-goals-desktop.jpg') no-repeat;
+        background-position: top;
+        background-size: 100% 63%;
+        background-attachment: fixed;
+    }
+
+    .checkmark {
+        height: auto;
+    }
+
+    .package-fs {
+        font-size: 1rem;
+    }
+
+    .vip-access {
+        font-size: 20px;
+        padding: 20px 32px;
+    }
+
+    .vip-access strong {
+        text-transform: uppercase;
+        font-size: 34px;
+    }
+}
