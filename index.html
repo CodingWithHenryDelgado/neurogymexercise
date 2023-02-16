@@ -19,17 +19,11 @@
         rel="stylesheet">
     <style>
         .strategy-background {
-            background: url('./img/business-strategy-success-target-goals.png') no-repeat center center fixed;
+            background: url('./img/business-strategy-success-target-goals.png');
             background-size: 100% 65%;
             background-position: top;
-        }
-
-        .hide-on-mobile {
-            display: none;
-        }
-
-        .hide-on-desktop {
-            display: block;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
         }
 
         #footer,
@@ -43,6 +37,10 @@
             padding-bottom: 32px;
         }
 
+        .need-help {
+            padding: 16px;
+        }
+
         .pb-8 {
             padding-bottom: 8px;
         }
@@ -52,13 +50,6 @@
         }
 
         @media only screen and (min-width: 768px) {
-            .hide-on-mobile {
-                display: block;
-            }
-
-            .hide-on-desktop {
-                display: none;
-            }
 
             .strategy-background {
                 background: url('./img/business-strategy-success-target-goals-desktop.jpg') no-repeat;
@@ -87,10 +78,9 @@
             <p class="m-0">ATTENTION: BUSINESS BREAKTHROUGH CHALLENGE ALUMNI MEMBERS...</p>
         </div>
     </section>
-    <section id="hero" class="strategy-background">
+    <section id="hero" class="">
         <div class="container-fluid p-0 text-center mb-4">
-
-            <div class="row justify-content-center">
+            <div class="row justify-content-center strategy-background">
                 <div class="free-vip col-sm-10 col-lg-8">
                     <p class="fw-bold text-center fs-1 text-light p-2 m-0 mt-5">Get FREE VIP ACCESS to the 5-Day
                         Business Breakthrough Challenge</p>
@@ -103,21 +93,25 @@
                         Free)</p>
                 </div>
                 <div class="row justify-content-center">
-                    <img class="img-fluid hide-on-desktop" src="./img/video-thumbnail.png"
+                    <img class="img-fluid d-block d-sm-none" src="./img/video-thumbnail.png"
                         alt="A video thumbnail of John Assaraf">
 
-                    <img style="width: 80%;" class="img-fluid hide-on-mobile" src="./img/video-thumbnail-desktop.png"
+                    <img style="width: 80%;" class="img-fluid d-block d-sm-none" src="./img/video-thumbnail-desktop.png"
                         alt="A video thumbnail of John Assaraf">
 
-                    <img style="width: 80%;" class="img-fluid mb-4 hide-on-desktop" src="./img/bussiness-row.png"
-                        alt="">
+                    <div class="d-block d-sm-none">
+                        <img style="width: 80%;" class="img-fluid mb-4" src="./img/bussiness-row.png"
+                            alt="A picture of all the businesses">
+                    </div>
 
-                    <img style="width: 80%;" class="img-fluid mb-4 hide-on-mobile" src="./img/business-row-desktop.png"
-                        alt="">
+                    <div class="d-none d-md-block">
+                        <img style="width: 80%;" class="img-fluid mb-4" src="./img/business-row-desktop.png"
+                            alt="A picture of all the businesses">
+                    </div>
 
                     <div class="row justify-content-center align-items-center">
                         <img src="./img/left-vip-access-arrow.png" alt="Arrow pointing to the VIP button"
-                            class="hide-on-mobile col-md-2" style="width: 10%; height: 20%;">
+                            class="d-none d-md-block col-md-2" style="width: 10%; height: 20%;">
                         <a href="getfreeaccess.com"
                             class="btn text-center rounded text-decoration-none col-sm-8 col-md-6 col-lg-2" style="background: linear-gradient(180deg, rgba(255,163,0,1) 0%, rgba(255,122,0,1) 75%); 
                         box-shadow: inset 0 -3px #EC5500;">
@@ -129,7 +123,7 @@
                             </div>
                         </a>
                         <img src="./img/vip-access-arrow.png" alt="Arrow pointing to the VIP button"
-                            class="hide-on-mobile" style="width: 10%; height: 20%;">
+                            class="d-none d-md-block" style="width: 10%; height: 20%;">
                     </div>
 
                     <div class="row justify-content-center">
@@ -355,14 +349,14 @@
     <section id="footer" class="border-top mt-3">
         <div class="container">
             <div class="row justify-content-between text-center">
-                <div class="col-xl-auto d-none d-xl-flex align-items-center pb-8">
+                <div class="col-xl-auto d-none d-xl-flex align-items-center need-help">
                     <div><img src="./img/question-line.png"></div>
-                    <div><b>Need Help?</b></div>
+                    <div class="pb-8"><b>Need Help?</b></div>
 
-                    <div><a href="mailto:support@myneurogym.com">support@myneurogym.com</a>
+                    <div class="pb-8"><a href="mailto:support@myneurogym.com">support@myneurogym.com</a>
                     </div>
                 </div>
-                <div class="col d-xl-none pb-8" style="padding-bottom: 8px;">
+                <div class="col d-xl-none need-help">
                     <div class="d-flex align-items-center justify-content-center pb-8">
                         <div style="padding-right: 5px;"><img src="./img/question-line.png"></div>
                         <div><b>Need Help?</b></div>
