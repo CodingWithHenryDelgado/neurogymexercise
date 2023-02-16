@@ -17,163 +17,369 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Nanum+Pen+Script&display=swap"
         rel="stylesheet">
+    <style>
+        .strategy-background {
+            background: url('./img/business-strategy-success-target-goals.png') no-repeat center center fixed;
+            background-size: 100% 65%;
+            background-position: top;
+        }
+
+        .hide-on-mobile {
+            display: none;
+        }
+
+        .hide-on-desktop {
+            display: block;
+        }
+
+        #footer,
+        #footer a {
+            color: #1b2124;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        #footer a {
+            padding-bottom: 32px;
+        }
+
+        .pb-8 {
+            padding-bottom: 8px;
+        }
+
+        #packages-desktop {
+            display: none;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .hide-on-mobile {
+                display: block;
+            }
+
+            .hide-on-desktop {
+                display: none;
+            }
+
+            .strategy-background {
+                background: url('./img/business-strategy-success-target-goals-desktop.jpg') no-repeat;
+                background-position: top;
+                background-size: 100% 63%;
+                background-attachment: fixed;
+            }
+
+            #packages {
+                display: none;
+            }
+        }
+    </style>
     <title>NeuroGym</title>
 </head>
 
 <body>
     <!-- TODO: 
-        - Fix the image size on John video
-        - Work on the footer
+        - Fix the image size on John video (Still WIP somehow)
+        - Update background image to not scroll with the page
         - Work on Desktop size
+        - Tablet size could use some work
     -->
-    <div class="container-fluid p-0 text-center mb-4"
-        style="background: url('./img/business-strategy-success-target-goals.png'); background-repeat: no-repeat; background-size: 100%;">
-        <div style="background-color: #7A9C49;" class="container-fluid text-light fs-6 text-center fw-bold py-2 px-0">
-            <p class="m-0">ATTENTION: BUSINESS BREAKTHROUGH CHALLENGE ALUMNI MEMBERS...</p>
-        </div>
+    <section id="hero" class="strategy-background">
+        <div class="container-fluid p-0 text-center mb-4">
+            <div style="background-color: #7A9C49;"
+                class="container-fluid text-light fs-6 text-center fw-bold py-2 px-0">
+                <p class="m-0">ATTENTION: BUSINESS BREAKTHROUGH CHALLENGE ALUMNI MEMBERS...</p>
+            </div>
 
-        <div class="free-vip">
-            <p class="fw-bold text-center fs-1 text-light p-4 m-0">Get FREE VIP ACCESS to the 5-Day
-                Business Breakthrough Challenge</p>
+            <div class="row justify-content-center">
+                <div class="free-vip col-sm-10 col-lg-8">
+                    <p class="fw-bold text-center fs-1 text-light p-2 m-0 mt-5">Get FREE VIP ACCESS to the 5-Day
+                        Business Breakthrough Challenge</p>
 
-            <p class="text-center fs-4 text-light py-2 px-4 m-0">Get Instant Access to LIVE Q&As with John Assaraf for
-                5 Days Straight
-                (100%
-                Free)</p>
-        </div>
+                    <p class="text-center fs-4 text-light py-2 px-4 m-0">Get Instant Access to LIVE Q&As with John
+                        Assaraf
+                        for
+                        5 Days Straight
+                        (100%
+                        Free)</p>
+                </div>
+                <div class="row justify-content-center">
+                    <img class="img-fluid hide-on-desktop" src="./img/video-thumbnail.png"
+                        alt="A video thumbnail of John Assaraf">
 
-        <img style="width: 100%;" class="img-fluid" src="./img/video-thumbnail.png"
-            alt="A video thumbnail of John Assaraf">
+                    <img style="width: 80%;" class="img-fluid hide-on-mobile" src="./img/video-thumbnail-desktop.png"
+                        alt="A video thumbnail of John Assaraf">
 
-        <img style="width: 80%;" class="img-fluid mb-4" src="./img/bussiness-row.png" alt="">
+                    <img style="width: 80%;" class="img-fluid mb-4 hide-on-desktop" src="./img/bussiness-row.png"
+                        alt="">
 
-        <a href="getfreeaccess.com" class="btn text-center rounded text-decoration-none" style="background: linear-gradient(180deg, rgba(255,163,0,1) 0%, rgba(255,122,0,1) 75%); 
-            box-shadow: inset 0 -3px #EC5500; width: 90%;">
-            <div class="text-light">
-                <p class="fw-bolder fs-3 mt-3 mb-0">Get Free VIP Access Now</p>
-                <p class="fw-semibold px-5" style="font-size: 1rem;">100% Free VIP ACCESS For Previous Members</p>
-            </div>
-        </a>
+                    <img style="width: 80%;" class="img-fluid mb-4 hide-on-mobile" src="./img/business-row-desktop.png"
+                        alt="">
 
-        <p class="text-danger fw-bold text-center fs-5 p-1 mt-2 text-break">ONLY Available For the First 200 People
-            to
-            Join!
-            (A Savings
-            of
-            $3,679!)</p>
-    </div>
-    <div class="container border border-2 text-center rounded mt-5" style="width: 95%">
-        <div class="row">
-            <div class="col-12">
-                <p class="fw-bold fs-1 p-2">BBC <br>
-                    FOUNDATION</p>
+                    <div class="row justify-content-center align-items-center">
+                        <img src="./img/left-vip-access-arrow.png" alt="Arrow pointing to the VIP button"
+                            class="hide-on-mobile col-md-2" style="width: 10%; height: 20%;">
+                        <a href="getfreeaccess.com"
+                            class="btn text-center rounded text-decoration-none col-sm-8 col-md-6 col-lg-2" style="background: linear-gradient(180deg, rgba(255,163,0,1) 0%, rgba(255,122,0,1) 75%); 
+                        box-shadow: inset 0 -3px #EC5500;">
+                            <div class="text-light">
+                                <p class="fw-bolder fs-3 mt-3 mb-0">Get Free VIP Access Now</p>
+                                <p class="fw-semibold px-5" style="font-size: 1rem;">100% Free VIP ACCESS For Previous
+                                    Members
+                                </p>
+                            </div>
+                        </a>
+                        <img src="./img/vip-access-arrow.png" alt="Arrow pointing to the VIP button"
+                            class="hide-on-mobile" style="width: 10%; height: 20%;">
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <p class="text-danger fw-bold text-center fs-5 p-1 mt-4 px-4 text-break col-md-8">ONLY Available
+                            For
+                            the First
+                            200
+                            People
+                            to
+                            Join!
+                            (A Savings
+                            of
+                            $3,679!)</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-12" style="background-color: #EEF5FE;">
-                <p class="py-3 px-1 fs-4 m-0"><strong>5 Days of Powerful, <u>Proven</u> Million-Dollar Business</strong>
-                    Training
-                    STREAMED from the
-                    Comfort Of
-                    Your Home <strong>($997
-                        Value)</strong></p>
-            </div>
-            <div class="col-12">
-                <p class="py-3 px-2 fs-4 m-0"><strong>Access To Our Private Business Network:</strong> Connect With
-                    Business
-                    Owners & Entrepreneurs
-                    from around the
-                    world to
-                    celebrate your success <strong>($197 Value)</strong></p>
-            </div>
-            <div class="col-12" style="background-color: #EEF5FE;">
-                <p class="py-3 px-2 fs-4 m-0"><strong>Unlocked: John’s Personal Vault Of Business Worksheets &
-                        Blueprints:</strong> Specifically
-                    Designed To Put What
-                    You’re
-                    Learning...Into Action. <strong>($97 Value)</strong></p>
-            </div>
-            <div class="col-12">
-                <p class="py-3 px-2 fs-4 m-0"><strong>Surprise Bonuses Throughout The Challenge:</strong> If We Told You
-                    What
-                    It
-                    Was...It Wouldn’t
-                    Be A
-                    Surprise!
-                    <strong>($297
-                        Value)</strong>
-                </p>
-            </div>
-            <div class="col-12" style="background-color: #EEF5FE;">
-                <p class="py-3 px-2 fs-4 m-0"><strong>Unlimited Access to Recordings Of The Business Breakthrough
-                        Trainings:</strong> Get every
-                    Masterclass inside our
-                    private Facebook group for 30 days. <strong>($97 Value)</strong></p>
-            </div>
-            <div class="col-12">
-                <p class="py-3 px-2 fs-3 m-0">That's A Total Value of <strong>$1,685</strong></p>
-                <p style="font-size: 50px;"><strong>$47 USD</strong></p>
-                <a style="width: 100%" class="btn btn-warning text-light fw-bold border border-warning fs-1 py-3 px-5"
-                    href="getitnow.com">GET
-                    IT
-                    NOW</a>
-                <p class="py-4 px-2 fs-3 m-0">Join Now And <strong>Save $1,638</strong></p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid text-center position-relative pt-5 pb-1 mt-5">
-        <p style="transform: rotate(15deg); font-size: 32px;"
-            class="text-danger text-center position-absolute top-0 ms-4 lh-sm" id="most-popular">Most <br>
-            Popular!</p>
-        <img class="mx-auto me-5" src="./img/pointing-arrow.png" alt="A red pointing arrow">
-    </div>
-    <div class="container border border-2 text-center rounded mt-3 mb-5" style="width: 95%">
-        <div class="row">
-            <div class="col-12">
-                <p class="fw-bold fs-1 p-2">BBC <br>
-                    VIP ELITE</p>
-            </div>
-            <div class="col-12" style="background-color: #EEF5FE;">
-                <p class="py-3 px-1 fs-4 m-0"><strong>Bonus Mastermind Training Day For VIPs Only:</strong> Special
-                    Training On
-                    How To 3X Your Power in Business, Mindset, & Relationships in 30 Days (Or Less)
-                    <strong>($300 Value)</strong>
-                </p>
-            </div>
-            <div class="col-12">
-                <p class="py-3 px-2 fs-4 m-0"><strong>Behind-The-Scenes Access to All 5 Trainings:</strong> Be In The
-                    Zoom Room With John
-                    LIVE, Ask YOUR Business Questions And Actively Participate <strong>($997 Value)</strong></p>
-            </div>
-            <div class="col-12" style="background-color: #EEF5FE;">
-                <p class="py-3 px-2 fs-4 m-0"><strong><span class="text-decoration-line-through">30 Days:</span>
-                        Lifetime!
-                        Access To Recordings Of The Challenge:</strong> Review The
-                    Trainings Anytime To Get Even More Revenue Generating Wisdom. <strong>($297 Value)</strong></p>
-            </div>
-            <div class="col-12">
-                <p class="py-3 px-2 fs-4 m-0"><strong>Private Q&A Session After Every Live Training For VIPs Only (5
-                        Bonus Hours
-                        of Q&A!):</strong> Get Expert Business Advice from John on your Business Niche & Real-time
-                    Solutions to your
-                    Challenges. <strong>($400 Value)</strong>
-                </p>
-            </div>
-            <div class="col-12 border-top">
-                <p class="py-2 px-2 fs-3 m-0">That's A Total Value of <strong>$3,679</strong></p>
-                <p style="font-size: 50px;"><strong>$144 USD</strong></p>
-                <a class="btn btn-warning text-light fw-bold border border-warning fs-1 py-4 px-5" href="getitnow.com"
-                    style="width: 100%">GET
-                    IT
-                    NOW</a>
-                <p class="py-4 px-2 fs-2 m-0">Join Now And <strong>Save $1,638</strong></p>
+    </section>
+    <section id="packages">
+        <div class="container border border-2 text-center rounded mt-5" style="width: 95%">
+            <div class="row">
+                <div class="col-12">
+                    <p class="fw-bold fs-1 p-2">BBC <br>
+                        FOUNDATION</p>
+                </div>
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-1 fs-4 m-0"><strong>5 Days of Powerful, <u>Proven</u> Million-Dollar
+                            Business</strong>
+                        Training
+                        STREAMED from the
+                        Comfort Of
+                        Your Home <strong>($997
+                            Value)</strong></p>
+                </div>
+                <div class="col-12">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Access To Our Private Business Network:</strong> Connect With
+                        Business
+                        Owners & Entrepreneurs
+                        from around the
+                        world to
+                        celebrate your success <strong>($197 Value)</strong></p>
+                </div>
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Unlocked: John’s Personal Vault Of Business Worksheets &
+                            Blueprints:</strong> Specifically
+                        Designed To Put What
+                        You’re
+                        Learning...Into Action. <strong>($97 Value)</strong></p>
+                </div>
+                <div class="col-12">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Surprise Bonuses Throughout The Challenge:</strong> If We Told
+                        You
+                        What
+                        It
+                        Was...It Wouldn’t
+                        Be A
+                        Surprise!
+                        <strong>($297
+                            Value)</strong>
+                    </p>
+                </div>
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Unlimited Access to Recordings Of The Business Breakthrough
+                            Trainings:</strong> Get every
+                        Masterclass inside our
+                        private Facebook group for 30 days. <strong>($97 Value)</strong></p>
+                </div>
+                <div class="col-12">
+                    <p class="py-3 px-2 fs-3 m-0">That's A Total Value of <strong>$1,685</strong></p>
+                    <p style="font-size: 50px;"><strong>$47 USD</strong></p>
+                    <a style="width: 100%"
+                        class="btn btn-warning text-light fw-bold border border-warning fs-1 py-3 px-5"
+                        href="getitnow.com">GET
+                        IT
+                        NOW</a>
+                    <p class="py-4 px-2 fs-3 m-0">Join Now And <strong>Save $1,638</strong></p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container border-top mt-3">
-        <p>Need Help?</p>
-        <p class="text-secondary text-center">support@myneurogym.com</p>
-        <p>Terms of Use - Privacy Policy - Terms & Conditions of Sale - Refund Policy - Affiliate Disclaimer - Contact
-            Us</p>
-    </div>
+        <div class="container-fluid text-center position-relative pt-5 pb-1 mt-5">
+            <p style="transform: rotate(15deg); font-size: 32px;"
+                class="text-danger text-center position-absolute top-0 ms-4 lh-sm" id="most-popular">Most <br>
+                Popular!</p>
+            <img class="mx-auto me-5" src="./img/pointing-arrow.png" alt="A red pointing arrow">
+        </div>
+        <div class="container border border-2 text-center rounded mt-3 mb-5" style="width: 95%">
+            <div class="row">
+                <div class="col-12">
+                    <p class="fw-bold fs-1 p-2">BBC <br>
+                        VIP ELITE</p>
+                </div>
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-1 fs-4 m-0"><strong>Bonus Mastermind Training Day For VIPs Only:</strong> Special
+                        Training On
+                        How To 3X Your Power in Business, Mindset, & Relationships in 30 Days (Or Less)
+                        <strong>($300 Value)</strong>
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Behind-The-Scenes Access to All 5 Trainings:</strong> Be In
+                        The
+                        Zoom Room With John
+                        LIVE, Ask YOUR Business Questions And Actively Participate <strong>($997 Value)</strong></p>
+                </div>
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-2 fs-4 m-0"><strong><span class="text-decoration-line-through">30 Days:</span>
+                            Lifetime!
+                            Access To Recordings Of The Challenge:</strong> Review The
+                        Trainings Anytime To Get Even More Revenue Generating Wisdom. <strong>($297 Value)</strong></p>
+                </div>
+                <div class="col-12">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Private Q&A Session After Every Live Training For VIPs Only (5
+                            Bonus Hours
+                            of Q&A!):</strong> Get Expert Business Advice from John on your Business Niche & Real-time
+                        Solutions to your
+                        Challenges. <strong>($400 Value)</strong>
+                    </p>
+                </div>
+                <div class="col-12 border-top">
+                    <p class="py-2 px-2 fs-3 m-0">That's A Total Value of <strong>$3,679</strong></p>
+                    <p style="font-size: 50px;"><strong>$144 USD</strong></p>
+                    <a class="btn btn-warning text-light fw-bold border border-warning fs-1 py-4 px-5"
+                        href="getitnow.com" style="width: 100%">GET
+                        IT
+                        NOW</a>
+                    <p class="py-4 px-2 fs-2 m-0">Join Now And <strong>Save $1,638</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="packages-desktop">
+        <div class="container border border-2 text-center rounded mt-5" style="width: 95%">
+            <div class="row">
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-1 fs-4 m-0"><strong>5 Days of Powerful, <u>Proven</u> Million-Dollar
+                            Business</strong>
+                        Training
+                        STREAMED from the
+                        Comfort Of
+                        Your Home <strong>($997
+                            Value)</strong></p>
+                </div>
+                <div class="col-12">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Access To Our Private Business Network:</strong> Connect
+                        With
+                        Business
+                        Owners & Entrepreneurs
+                        from around the
+                        world to
+                        celebrate your success <strong>($197 Value)</strong></p>
+                </div>
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Unlocked: John’s Personal Vault Of Business Worksheets &
+                            Blueprints:</strong> Specifically
+                        Designed To Put What
+                        You’re
+                        Learning...Into Action. <strong>($97 Value)</strong></p>
+                </div>
+                <div class="col-12">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Surprise Bonuses Throughout The Challenge:</strong> If We
+                        Told
+                        You
+                        What
+                        It
+                        Was...It Wouldn’t
+                        Be A
+                        Surprise!
+                        <strong>($297
+                            Value)</strong>
+                    </p>
+                </div>
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Unlimited Access to Recordings Of The Business
+                            Breakthrough
+                            Trainings:</strong> Get every
+                        Masterclass inside our
+                        private Facebook group for 30 days. <strong>($97 Value)</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center position-relative pt-5 pb-1 mt-5">
+            <p style="transform: rotate(15deg); font-size: 32px;"
+                class="text-danger text-center position-absolute top-0 ms-4 lh-sm" id="most-popular">Most <br>
+                Popular!</p>
+            <img class="mx-auto me-5" src="./img/pointing-arrow.png" alt="A red pointing arrow">
+        </div>
+        <div class="container border border-2 text-center rounded mt-3 mb-5" style="width: 95%">
+            <div class="row">
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-1 fs-4 m-0"><strong>Bonus Mastermind Training Day For VIPs Only:</strong>
+                        Special
+                        Training On
+                        How To 3X Your Power in Business, Mindset, & Relationships in 30 Days (Or Less)
+                        <strong>($300 Value)</strong>
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Behind-The-Scenes Access to All 5 Trainings:</strong> Be
+                        In
+                        The
+                        Zoom Room With John
+                        LIVE, Ask YOUR Business Questions And Actively Participate <strong>($997 Value)</strong></p>
+                </div>
+                <div class="col-12" style="background-color: #EEF5FE;">
+                    <p class="py-3 px-2 fs-4 m-0"><strong><span class="text-decoration-line-through">30 Days:</span>
+                            Lifetime!
+                            Access To Recordings Of The Challenge:</strong> Review The
+                        Trainings Anytime To Get Even More Revenue Generating Wisdom. <strong>($297 Value)</strong>
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p class="py-3 px-2 fs-4 m-0"><strong>Private Q&A Session After Every Live Training For VIPs
+                            Only (5
+                            Bonus Hours
+                            of Q&A!):</strong> Get Expert Business Advice from John on your Business Niche &
+                        Real-time
+                        Solutions to your
+                        Challenges. <strong>($400 Value)</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="border-top mt-3">
+        <div class="container">
+            <div class="row justify-content-between text-center">
+                <div class="col-xl-auto d-none d-xl-flex align-items-center pb-8">
+                    <div><img src="./img/question-line.png"></div>
+                    <div><b>Need Help?</b></div>
+
+                    <div><a href="mailto:support@myneurogym.com">support@myneurogym.com</a>
+                    </div>
+                </div>
+                <div class="col d-xl-none pb-8" style="padding-bottom: 8px;">
+                    <div class="d-flex align-items-center justify-content-center pb-8">
+                        <div style="padding-right: 5px;"><img src="./img/question-line.png"></div>
+                        <div><b>Need Help?</b></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div><a href="mailto:support@myneurogym.com">support@myneurogym.com</a></div>
+                    </div>
+                </div>
+                <div class="col-xl-auto d-xl-flex align-self-center pb-8">
+                    <div><a href="#" target="_blank">Terms of Use</a> - <a href="#" target="_blank">Privacy Policy</a> -
+                        <a href="#" target="_blank">Terms &amp;
+                            Conditions of Sale</a> - <a href="#" target="_blank">Refund Policy</a> - <a href="#"
+                            target="_blank">Affiliate Disclaimer</a> - <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
