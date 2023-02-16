@@ -6,12 +6,40 @@ html {
     font-family: 'Nanum Pen Script', cursive;
 }
 
-.strategy-background {
-    background: url('./img/business-strategy-success-target-goals.png');
-    background-size: 100% 65%;
-    background-position: top;
-    background-attachment: fixed;
+#hero {
+    background-image: linear-gradient(180deg, rgba(61, 71, 180, 0.1) 400px, rgba(255, 255, 255, 1) 400px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
+    background-size: 100% 75%;
     background-repeat: no-repeat;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.yellow-underline {
+    background-image: url('./img/yellow-strike.png');
+    background-position: center 36px;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-size: 2.15rem;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+#vip-mobile {
+    font-size: 2.2rem;
+}
+
+#BBC {
+    font-size: 1.75rem;
+}
+
+#instant-access {
+    padding: 0 1rem;
+}
+
+#only-200 {
+    font-size: 1.25rem;
+    padding: 1.25rem 1rem;
 }
 
 footer {
@@ -45,11 +73,34 @@ footer a {
 
 @media only screen and (min-width: 768px) {
 
-    .strategy-background {
-        background: url('./img/business-strategy-success-target-goals-desktop.jpg') no-repeat;
-        background-position: top;
-        background-size: 100% 63%;
-        background-attachment: fixed;
+    #hero {
+        background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 580px, rgba(255, 255, 255, 1) 300px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
+        background-size: 100%;
+        padding: 5% 0 2% 0;
+    }
+
+    #hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .yellow-underline-desktop {
+        background-image: url('./img/yellow-strike.png');
+        background-position: center 51px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: inline-block;
+        font-size: 2.75rem;
+        padding-bottom: 10px;
+        width: 80%;
+    }
+
+    #instant-access {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    #only-200 {
+        padding: 2rem;
     }
 
     .checkmark {
@@ -68,5 +119,33 @@ footer a {
     .vip-access strong {
         text-transform: uppercase;
         font-size: 34px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #hero {
+        background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 680px, rgba(255, 255, 255, 1) 300px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
+        padding: 4% 0;
+    }
+
+    #hero h1 {
+        font-size: 2.9rem;
+    }
+
+    #hero p {
+        padding-bottom: 3%;
+    }
+
+    .yellow-underline-desktop {
+        font-size: 2.75rem;
+        width: 55%;
+    }
+
+    #instant-access {
+        font-size: 1.25rem;
+    }
+
+    #only-200 {
+        width: 35%;
     }
 }
