@@ -458,6 +458,8 @@ footer a {
     }
 
     .elite-header-col {
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0 -11px 11px rgb(50 50 50 / 10%);
         box-shadow: 0 -11px 11px rgb(50 50 50 / 10%);
     }
 
