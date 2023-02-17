@@ -96,8 +96,8 @@ footer a:hover {
     background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 400px, rgba(255, 255, 255, 1) 400px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals-mobile.png');
     background-size: 100% 70%;
     background-repeat: no-repeat;
-    padding-top: 32px;
-    padding-bottom: 16px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 #vip-mobile {
@@ -106,12 +106,12 @@ footer a:hover {
 
 .yellow-underline {
     background-image: url('./img/yellow-strike.png');
-    background-position: center 36px;
+    background-position: center 2.25rem;
     background-size: 90%;
     background-repeat: no-repeat;
     display: inline-block;
     font-size: 2.15rem;
-    padding-bottom: 5px;
+    padding-bottom: 0.313rem;
     width: 100%;
 }
 
@@ -136,14 +136,14 @@ footer a:hover {
 .vip-access {
     background: linear-gradient(180deg, rgba(255, 163, 0, 1) 0%, rgba(255, 122, 0, 1) 75%);
     box-shadow: inset 0 -3px #ec5500;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
-    padding: 16px 2px;
+    padding: 1rem 0.125rem;
 }
 
 .vip-access span {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     width: 87%;
 }
@@ -228,7 +228,7 @@ footer a:hover {
 
 .most-popular {
     margin-left: 0;
-    width: 300px;
+    width: 18.75rem;
 }
 
 /*------------------------------------*\
@@ -240,8 +240,8 @@ footer a:hover {
 \*------------------------------------*/
 
 footer {
-    margin-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 footer,
@@ -257,11 +257,11 @@ footer a {
 }
 
 .need-help {
-    padding: 16px;
+    padding: 1rem;
 }
 
 .pb-8 {
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
 }
 
 /*------------------------------------*\
@@ -277,15 +277,15 @@ footer a {
     border: none;
     margin-left: auto;
     outline: none;
-    width: 50px;
+    width: 3.125rem;
 }
 
 #close-modal span {
-    font-size: 64px;
+    font-size: 4rem;
     color: red;
     position: absolute;
-    top: -32px;
-    right: 5px;
+    top: -2rem;
+    right: 0.313rem;
 }
 
 .modal-content {
@@ -298,7 +298,7 @@ footer a {
 
 .modal .btn {
     display: block;
-    margin: 15px auto 0 auto;
+    margin: 0.938rem auto 0 auto;
 }
 
 .modal-title {
@@ -312,7 +312,7 @@ footer a {
 
 .modal-content p {
     padding: 0.25rem;
-    font-size: 0.85em;
+    font-size: 0.875rem;
 }
 
 .modal-content .btn {
@@ -349,12 +349,12 @@ footer a {
 
     .yellow-underline-desktop {
         background-image: url('./img/yellow-strike.png');
-        background-position: center 51px;
+        background-position: center 3.188rem;
         background-size: 100%;
         background-repeat: no-repeat;
         display: inline-block;
         font-size: 2.75rem;
-        padding-bottom: 10px;
+        padding-bottom: 0.625rem;
         width: 80%;
     }
 
@@ -368,13 +368,13 @@ footer a {
     }
 
     .vip-access {
-        font-size: 20px;
-        padding: 20px 16px;
+        font-size: 1.25rem;
+        padding: 1.25rem 1rem;
     }
 
     .vip-access strong {
         text-transform: uppercase;
-        font-size: 34px;
+        font-size: 2.125rem;
     }
 
     .only-200 {
@@ -417,10 +417,10 @@ footer a {
     }
 
     .yellow-underline-desktop {
-        background-position: center 54px;
+        background-position: center 3.375rem;
         font-size: 3rem;
-        max-width: 550px;
-        padding-bottom: 4px;
+        max-width: 34.375rem;
+        padding-bottom: 0.25rem;
     }
 
     #instant-access {
@@ -428,7 +428,7 @@ footer a {
     }
 
     .vip-access {
-        padding: 20px 60px;
+        padding: 1.25rem 3.75rem;
     }
 
     .only-200 {
@@ -449,8 +449,8 @@ footer a {
     }
 
     #most-popular-desktop {
-        top: -50px;
-        right: -40px;
+        top: -3.125rem;
+        right: -2.5rem;
     }
 
     #most-popular-desktop img {
@@ -469,10 +469,10 @@ footer a {
     .foundation-header-col,
     .elite-header-col {
         color: #1F1F1F;
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 800;
-        line-height: 39px;
-        padding: 32px;
+        line-height: 2.438rem;
+        padding: 2rem;
     }
 
     .package-col.elite-col,
@@ -492,10 +492,10 @@ footer a {
         box-shadow: -15px 0 20px -20px #d2d2d2 inset;
         content: " ";
         height: 100%;
-        left: -20px;
+        left: -1.25rem;
         position: absolute;
         top: 0;
-        width: 20px;
+        width: 1.25rem;
     }
 
     .package-col.elite-col::after,
@@ -506,12 +506,12 @@ footer a {
         height: 100%;
         position: absolute;
         top: 0;
-        right: -20px;
-        width: 20px;
+        right: -1.25rem;
+        width: 1.25rem;
     }
 
     .description {
-        font-size: 18px;
+        font-size: 1.125rem;
         padding: 1rem 1.25rem;
     }
 
@@ -524,13 +524,13 @@ footer a {
         font-size: 1.25rem;
         line-height: 2.85rem;
         margin: 0.5rem 0 0 0;
-        padding-top: 16px;
+        padding-top: 1rem;
     }
 
     .row.footer a {
         border: 2px solid #CD8505;
         font-size: 1.25rem;
-        padding: 15px 25px;
+        padding: 0.938rem 1.563rem;
     }
 
     .foundation-footer-col {
@@ -552,7 +552,7 @@ footer a {
 
     footer {
         margin-top: 0;
-        padding: 16px 0;
+        padding: 1rem 0;
     }
 
     /*------------------------------------*\
@@ -564,12 +564,12 @@ footer a {
     \*------------------------------------*/
 
     .modal-dialog {
-        max-width: 750px;
+        max-width: 46.875rem;
     }
 
     #close-modal span {
-        font-size: 64px;
-        top: -26px;
+        font-size: 4rem;
+        top: -1.625rem;
     }
 
     .modal-body {
@@ -588,7 +588,7 @@ footer a {
 
     #stayonthis {
         font-size: 1.5rem;
-        width: 525px;
+        width: 32.813rem;
     }
 
     /*------------------------------------*\
@@ -618,8 +618,8 @@ footer a {
     \*------------------------------------*/
 
     #most-popular-desktop {
-        top: -45px;
-        right: -50px;
+        top: -2.813rem;
+        right: -3.125rem;
     }
 
     #most-popular-desktop img {
@@ -635,7 +635,7 @@ footer a {
     \*------------------------------------*/
 
     footer {
-        padding: 32px 0;
+        padding: 2rem 0;
     }
 
     /*------------------------------------*\
@@ -650,7 +650,7 @@ footer a {
     \*------------------------------------*/
 
     #most-popular-desktop {
-        right: -100px;
+        right: -6.25rem;
     }
 
     /*------------------------------------*\
