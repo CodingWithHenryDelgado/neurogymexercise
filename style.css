@@ -1,4 +1,4 @@
-html {
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -256,10 +256,23 @@ footer a:hover {
         padding-bottom: 6rem;
     }
 
+    #most-popular-desktop {
+        top: -50px;
+        right: -40px;
+    }
+
     .foundation-header-col {
         border-top: 1px solid #dfdbe0;
         border-left: 1px solid #dfdbe0;
+    }
+
+    .foundation-header-col,
+    .elite-header-col {
+        color: #1F1F1F;
         font-size: 32px;
+        font-weight: 800;
+        line-height: 39px;
+        padding: 32px;
     }
 
     .foundation-col,
@@ -279,7 +292,6 @@ footer a:hover {
 
     .elite-header-col {
         box-shadow: 0 -11px 11px rgb(50 50 50 / 10%);
-        font-size: 32px;
     }
 
     .package-col.elite-col::before,
@@ -307,8 +319,8 @@ footer a:hover {
     }
 
     .description {
-        font-size: 15px;
-        padding: 1rem 0.75rem;
+        font-size: 18px;
+        padding: 1rem 1.25rem;
     }
 
     .row.footer h2 {
@@ -317,8 +329,13 @@ footer a:hover {
     }
 
     .row.footer a {
+        border: 4px solid #CD8505;
         font-size: 1.25rem;
         padding: 15px 25px;
+    }
+
+    .elite-footer-col a {
+        border: 2px solid #CD8505 !important;
     }
 
     .transparent-background {
@@ -334,7 +351,10 @@ footer a:hover {
     }
 
     .regular {
+        font-size: 1.35rem;
+        line-height: 2.85rem;
         margin: 0.5rem 0;
+        padding-top: 16px;
     }
 
     .foundation-footer-col {
@@ -348,6 +368,7 @@ footer a:hover {
 
     footer {
         margin-top: 0;
+        padding: 32px 0;
     }
 }
 
@@ -358,10 +379,10 @@ footer a:hover {
         background-size: 110%;
         padding: 2% 0 0 0;
     }
-}
 
-@media only screen and (min-width: 1600px) {
     #most-popular-desktop {
-        margin-right: 8%;
+        top: -35px;
+        right: -75px;
     }
+
 }
