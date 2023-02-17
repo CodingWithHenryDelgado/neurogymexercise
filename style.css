@@ -40,6 +40,15 @@ body {
     filter: drop-shadow(5px 5px 5px #222);
 }
 
+footer a:hover {
+    text-shadow: 2px 2px #FFF;
+}
+
+#email:hover {
+    color: #1F1F1F;
+    transition: ease-out 0.2s;
+}
+
 /*------------------------------------*\
     END OF HOVER
 \*------------------------------------*/
@@ -64,6 +73,9 @@ body {
     background-color: #EEF5FE;
 }
 
+.modal {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
 /*------------------------------------*\
     END OF BACKGROUNDS
@@ -240,18 +252,9 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
-    text-shadow: 2px 2px #FFF;
-}
-
 #email {
     color: #727272;
     transition: ease-in 0.2s;
-}
-
-#email:hover {
-    color: #1F1F1F;
-    transition: ease-out 0.2s;
 }
 
 .need-help {
@@ -284,10 +287,6 @@ footer a:hover {
     position: absolute;
     top: -32px;
     right: 5px;
-}
-
-.modal {
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content {
