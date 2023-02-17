@@ -1,9 +1,84 @@
+/*------------------------------------*\
+    INDEX
+\*------------------------------------*/
+
+/*
+HOVER
+BACKGROUNDS
+HEADER
+PACKAGES
+MODAL
+FOOTER
+
+TABLET SIZES
+
+DESKTOP AND ABOVE SIZES
+
+*/
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*------------------------------------*\
+    HOVER
+\*------------------------------------*/
+
+.btn {
+    transition: ease-out 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
+    transition: ease-in 0.2s;
+}
+
+#play-button:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+/*------------------------------------*\
+    END OF HOVER
+\*------------------------------------*/
+
+/*------------------------------------*\
+    BACKGROUNDS
+\*------------------------------------*/
+
+.transparent-background {
+    background-color: transparent !important;
+}
+
+.white-background {
+    background-color: #FFF;
+}
+
+.gray-background {
+    background-color: #FDFEFE;
+}
+
+.even {
+    background-color: #EEF5FE;
+}
+
+
+/*------------------------------------*\
+    END OF BACKGROUNDS
+\*------------------------------------*/
+
 #most-popular {
     font-family: 'Nanum Pen Script', cursive;
+}
+
+/*------------------------------------*\
+    HEADER MOBILE
+\*------------------------------------*/
+
+#green-bar {
+    font-size: 0.8rem;
 }
 
 #hero {
@@ -12,6 +87,10 @@ body {
     background-repeat: no-repeat;
     padding-top: 32px;
     padding-bottom: 16px;
+}
+
+#vip-mobile {
+    font-size: 1.6rem;
 }
 
 .yellow-underline {
@@ -25,10 +104,6 @@ body {
     width: 100%;
 }
 
-#vip-mobile {
-    font-size: 1.6rem;
-}
-
 #BBC {
     font-size: 1.25rem;
 }
@@ -39,29 +114,45 @@ body {
     font-weight: 600;
 }
 
+#video-thumbnail-mobile {
+    margin-top: -12%;
+}
+
+#business-row-mobile {
+    margin-top: -16%;
+}
+
+.vip-access {
+    background: linear-gradient(180deg, rgba(255, 163, 0, 1) 0%, rgba(255, 122, 0, 1) 75%);
+    box-shadow: inset 0 -3px #ec5500;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 16px 2px;
+}
+
+.vip-access span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    width: 87%;
+}
+
 .only-200 {
     font-size: 1rem;
     padding: 1.25rem;
     margin: 0;
 }
 
-#play-button:hover {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
-}
+/*------------------------------------*\
+    END OF HEADER
+\*------------------------------------*/
 
-.btn {
-    transition: ease-out 0.2s;
-}
+/*------------------------------------*\
+    PACKAGES MOBILE
+\*------------------------------------*/
 
-.btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
-    transition: ease-in 0.2s;
-}
-
-.even {
-    background-color: #EEF5FE;
+#packages {
+    padding: 1rem 0;
 }
 
 .packages-mobile {
@@ -98,14 +189,14 @@ body {
     font-size: 1.35rem;
 }
 
-.elite-arrow {
-    margin-right: 5%;
-}
-
 .regular {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.85rem;
     margin-bottom: 2rem;
+}
+
+.elite-arrow {
+    margin-right: 5%;
 }
 
 .row.footer h2 {
@@ -128,6 +219,14 @@ body {
     margin-left: 0;
     width: 300px;
 }
+
+/*------------------------------------*\
+    END OF PACKAGES
+\*------------------------------------*/
+
+/*------------------------------------*\
+    FOOTER MOBILE
+\*------------------------------------*/
 
 footer {
     margin-top: 16px;
@@ -163,31 +262,28 @@ footer a:hover {
     padding-bottom: 8px;
 }
 
-.vip-access {
-    background: linear-gradient(180deg, rgba(255, 163, 0, 1) 0%, rgba(255, 122, 0, 1) 75%);
-    box-shadow: inset 0 -3px #ec5500;
-    font-size: 20px;
-    font-weight: 800;
-    padding: 16px 2px;
+/*------------------------------------*\
+    END OF FOOTER
+\*------------------------------------*/
+
+/*------------------------------------*\
+    MODAL MOBILE
+\*------------------------------------*/
+
+#close-modal {
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    outline: none;
+    width: 50px;
 }
 
-.vip-access span {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 600;
-    width: 87%;
-}
-
-#video-thumbnail-mobile {
-    margin-top: -12%;
-}
-
-#business-row-mobile {
-    margin-top: -16%;
-}
-
-#packages {
-    padding: 1rem 0;
+#close-modal span {
+    font-size: 64px;
+    color: red;
+    position: absolute;
+    top: -32px;
+    right: 5px;
 }
 
 .modal {
@@ -211,18 +307,9 @@ footer a:hover {
     font-weight: 700;
 }
 
-.monster-modal {
-    width: 35%;
-    margin: 0 auto;
-}
-
 #important {
     font-size: 1rem;
     margin-top: 2.5rem;
-}
-
-#nothanks {
-    font-weight: 600;
 }
 
 .modal-content p {
@@ -235,23 +322,23 @@ footer a:hover {
     font-weight: 700;
 }
 
-#close-modal {
-    background: transparent;
-    border: none;
-    margin-left: auto;
-    outline: none;
-    width: 50px;
+#nothanks {
+    font-weight: 600;
 }
 
-#close-modal span {
-    font-size: 64px;
-    color: red;
-    position: absolute;
-    top: -32px;
-    right: 5px;
-}
+/*------------------------------------*\
+    END OF MODAL
+\*------------------------------------*/
+
+/*------------------------------------*\
+    TABLET SIZE
+\*------------------------------------*/
 
 @media only screen and (min-width: 768px) {
+
+    /*------------------------------------*\
+        HEADER TABLET
+    \*------------------------------------*/
 
     #hero {
         background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 580px, rgba(255, 255, 255, 1) 300px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
@@ -278,17 +365,8 @@ footer a:hover {
         padding: 1rem;
     }
 
-    .only-200 {
-        font-size: 1.15rem;
-        padding: 2rem;
-    }
-
-    .checkmark {
-        height: auto;
-    }
-
-    .package-fs {
-        font-size: 1rem;
+    #video-thumbnail {
+        padding: 0 2rem;
     }
 
     .vip-access {
@@ -301,12 +379,27 @@ footer a:hover {
         font-size: 34px;
     }
 
-    #video-thumbnail {
-        padding: 0 2rem;
+    .only-200 {
+        font-size: 1.15rem;
+        padding: 2rem;
     }
+
+    /*------------------------------------*\
+        END OF HEADER
+    \*------------------------------------*/
 }
 
+
+/*------------------------------------*\
+    DESKTOP SIZE
+\*------------------------------------*/
+
 @media only screen and (min-width: 992px) {
+
+    /*------------------------------------*\
+        HEADER DESKTOP
+    \*------------------------------------*/
+
     #hero {
         background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 665px, rgba(255, 255, 255, 1) 300px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
         background-size: 125%;
@@ -337,6 +430,18 @@ footer a:hover {
         padding: 20px 60px;
     }
 
+    .only-200 {
+        font-size: 1.25rem;
+    }
+
+    /*------------------------------------*\
+        END OF HEADER
+    \*------------------------------------*/
+
+    /*------------------------------------*\
+        PACKAGES DESKTOP
+    \*------------------------------------*/
+
     #packages {
         background: linear-gradient(180deg, rgba(254, 254, 255, 1) 0%, rgba(237, 241, 248, 1) 50%);
         padding-bottom: 6rem;
@@ -351,13 +456,13 @@ footer a:hover {
         width: 75%;
     }
 
-    .only-200 {
-        font-size: 1.25rem;
-    }
-
     .foundation-header-col {
         border-top: 1px solid #dfdbe0;
         border-left: 1px solid #dfdbe0;
+    }
+
+    .elite-header-col {
+        box-shadow: 0 -11px 11px rgb(50 50 50 / 10%);
     }
 
     .foundation-header-col,
@@ -369,23 +474,15 @@ footer a:hover {
         padding: 32px;
     }
 
-    .foundation-col,
-    .foundation-footer-col {
-        border-left: 1px solid #dfdbe0;
-    }
-
-    .even.package-col.foundation-col {
-        background-color: #EBF2FB;
-    }
-
     .package-col.elite-col,
     .elite-header-col,
     .elite-footer-col {
         position: relative;
     }
 
-    .elite-header-col {
-        box-shadow: 0 -11px 11px rgb(50 50 50 / 10%);
+    .foundation-col,
+    .foundation-footer-col {
+        border-left: 1px solid #dfdbe0;
     }
 
     .package-col.elite-col::before,
@@ -422,33 +519,17 @@ footer a:hover {
         margin: 0.5rem 0;
     }
 
+    .regular {
+        font-size: 1.25rem;
+        line-height: 2.85rem;
+        margin: 0.5rem 0 0 0;
+        padding-top: 16px;
+    }
+
     .row.footer a {
-        border: 4px solid #CD8505;
+        border: 2px solid #CD8505;
         font-size: 1.25rem;
         padding: 15px 25px;
-    }
-
-    .elite-footer-col a {
-        border: 2px solid #CD8505 !important;
-    }
-
-    .transparent-background {
-        background-color: transparent !important;
-    }
-
-    .white-background {
-        background-color: #FFF;
-    }
-
-    .gray-background {
-        background-color: #FDFEFE;
-    }
-
-    .regular {
-        font-size: 1.35rem;
-        line-height: 2.85rem;
-        margin: 0.5rem 0;
-        padding-top: 16px;
     }
 
     .foundation-footer-col {
@@ -460,28 +541,34 @@ footer a:hover {
         box-shadow: 0 4px 13px rgb(50 50 50 / 10%);
     }
 
+    /*------------------------------------*\
+        END OF PACKAGES
+    \*------------------------------------*/
+
+    /*------------------------------------*\
+        FOOTER DESKTOP
+    \*------------------------------------*/
+
     footer {
         margin-top: 0;
-        padding: 32px 0;
+        padding: 16px 0;
     }
 
-    #close-modal span {
-        font-size: 64px;
-        top: -26px;
-    }
+    /*------------------------------------*\
+        END OF FOOTER
+    \*------------------------------------*/
 
-    #important {
-        font-size: 2.15rem;
-        margin-top: 5rem;
-    }
+    /*------------------------------------*\
+        MODAL DESKTOP
+    \*------------------------------------*/
 
     .modal-dialog {
         max-width: 750px;
     }
 
-    #stayonthis {
-        font-size: 1.5rem;
-        width: 525px;
+    #close-modal span {
+        font-size: 64px;
+        top: -26px;
     }
 
     .modal-body {
@@ -492,15 +579,42 @@ footer a:hover {
     .modal-body strong {
         color: #000;
     }
+
+    #important {
+        font-size: 2.15rem;
+        margin-top: 5rem;
+    }
+
+    #stayonthis {
+        font-size: 1.5rem;
+        width: 525px;
+    }
+
+    /*------------------------------------*\
+        END OF MODAL
+    \*------------------------------------*/
 }
 
 @media only screen and (min-width: 1400px) {
+
+    /*------------------------------------*\
+        HEADER 1400
+    \*------------------------------------*/
+
     #hero {
         background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 725px, rgba(255, 255, 255, 1) 300px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
         background-position: 0 50%;
         background-size: 110%;
         padding: 2% 0 0 0;
     }
+
+    /*------------------------------------*\
+        END OF HEADER
+    \*------------------------------------*/
+
+    /*------------------------------------*\
+        PACKAGE 1400
+    \*------------------------------------*/
 
     #most-popular-desktop {
         top: -45px;
@@ -511,10 +625,34 @@ footer a:hover {
         width: 100%;
     }
 
+    /*------------------------------------*\
+        END OF PACKAGE
+    \*------------------------------------*/
+
+    /*------------------------------------*\
+        FOOTER 1400
+    \*------------------------------------*/
+
+    footer {
+        padding: 32px 0;
+    }
+
+    /*------------------------------------*\
+        END OF FOOTER 
+    \*------------------------------------*/
 }
 
 @media only screen and (min-width: 1600px) {
+
+    /*------------------------------------*\
+        PACKAGE 1600
+    \*------------------------------------*/
+
     #most-popular-desktop {
         right: -100px;
     }
+
+    /*------------------------------------*\
+        END OF PACKAGE
+    \*------------------------------------*/
 }
