@@ -34,7 +34,9 @@ body {
 }
 
 #instant-access {
-    padding: 0 1rem;
+    padding: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 .only-200 {
@@ -166,7 +168,7 @@ footer a:hover {
     box-shadow: inset 0 -3px #ec5500;
     font-size: 20px;
     font-weight: 800;
-    padding: 16px 24px;
+    padding: 16px 2px;
 }
 
 .vip-access span {
@@ -177,7 +179,7 @@ footer a:hover {
 }
 
 #video-thumbnail-mobile {
-    margin-top: -8%;
+    margin-top: -12%;
 }
 
 #business-row-mobile {
