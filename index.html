@@ -86,7 +86,7 @@
                             class="img-fluid">
                     </div>
                     <div class="col-md-auto">
-                        <a href="#"
+                        <a href="#" id="VIP"
                             class="btn text-center rounded text-decoration-none text-light vip-access"><strong>Get Free
                                 VIP Access Now</strong><br />
                             <span>100% Free VIP ACCESS&nbsp;For Previous Members</span>
@@ -129,7 +129,7 @@
                             <div class="d-none d-lg-block text-center position-absolute" style="z-index: 3;"
                                 id="most-popular-desktop">
                                 <img class="mx-auto" src="./img/mostpopulararrow.png"
-                                    alt="Most popular with arrow pointing to elite package" style="width: 75%">
+                                    alt="Most popular with arrow pointing to elite package">
                             </div>
                             <div>
                                 <p class="m-0">BBC <br> VIP ELITE</p>
@@ -173,7 +173,7 @@
                     <div class="row even">
                         <div class="col-md-4 package-col description">
                             <div>
-                                <p class="m-0"><strong>Unlocked: John’s Personal Vault Of Business Worksheets &
+                                <p class="m-0"><strong>Unlocked: John’s <em>Personal</em> Vault Of Business Worksheets &
                                         Blueprints:</strong> Specifically
                                     Designed To Put What
                                     You’re
@@ -459,6 +459,7 @@
                     </div>
                 </div>
             </div>
+        </section>
     </main>
     <footer class="border-top">
         <div class="container">
@@ -490,6 +491,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        const getVIPAccess = document.getElementById('VIP');
+
+        getVIPAccess.addEventListener('click', function () {
+            var modalId = 'exitModal';
+            if (evt.toElement === null && evt.relatedTarget === null && !localStorage.getItem('modal.' + modalId)) {
+                var modal = new bootstrap.Modal('#' + modalId);
+                modal.show();
+                localStorage.setItem('modal.' + modalId, '1');
+            }
+        })
+    </script>
 </body>
 
 </html>

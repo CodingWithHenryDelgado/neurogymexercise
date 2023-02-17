@@ -283,6 +283,14 @@ footer a:hover {
         right: -40px;
     }
 
+    #most-popular-desktop img {
+        width: 75%;
+    }
+
+    .only-200 {
+        font-size: 1.25rem;
+    }
+
     .foundation-header-col {
         border-top: 1px solid #dfdbe0;
         border-left: 1px solid #dfdbe0;
@@ -403,13 +411,18 @@ footer a:hover {
     }
 
     #most-popular-desktop {
-        top: -35px;
-        right: -60px;
+        top: -45px;
+        right: -50px;
     }
+
+    #most-popular-desktop img {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (min-width: 1600px) {
     #most-popular-desktop {
-        right: -75px;
+        right: -100px;
     }
 }
