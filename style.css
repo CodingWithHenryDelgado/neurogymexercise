@@ -161,6 +161,10 @@ footer a:hover {
     margin-top: -16%;
 }
 
+#packages {
+    padding-bottom: 3rem;
+}
+
 @media only screen and (min-width: 768px) {
 
     #hero {
