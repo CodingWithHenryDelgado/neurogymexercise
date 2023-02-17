@@ -37,9 +37,9 @@ html {
     padding: 0 1rem;
 }
 
-#only-200 {
-    font-size: 1.25rem;
-    padding: 1.25rem 1rem;
+.only-200 {
+    font-size: 1rem;
+    padding: 1.25rem;
 }
 
 #play-button:hover {
@@ -143,12 +143,14 @@ footer a:hover {
 .vip-access {
     font-size: 20px;
     font-weight: 800;
-    padding: 16px 30px;
+    padding: 16px 24px;
 }
 
 .vip-access span {
+    display: inline-block;
     font-size: 18px;
     font-weight: 600;
+    width: 87%;
 }
 
 #video-thumbnail-mobile {
@@ -186,7 +188,8 @@ footer a:hover {
         padding: 1rem;
     }
 
-    #only-200 {
+    .only-200 {
+        font-size: 1.15rem;
         padding: 2rem;
     }
 
@@ -238,10 +241,6 @@ footer a:hover {
 
     #instant-access {
         font-size: 1.25rem;
-    }
-
-    #only-200 {
-        width: 50%;
     }
 
     .vip-access {
