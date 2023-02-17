@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+div {
+    border: 2px solid purple;
+}
+
 #most-popular {
     font-family: 'Nanum Pen Script', cursive;
 }
@@ -382,7 +386,7 @@ footer a:hover {
 
     #most-popular-desktop {
         top: -35px;
-        right: -75px;
+        right: -60px;
     }
 
 }
