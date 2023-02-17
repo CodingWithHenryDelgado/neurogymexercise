@@ -7,11 +7,11 @@ html {
 }
 
 #hero {
-    background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 400px, rgba(255, 255, 255, 1) 400px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
-    background-size: 100% 75%;
+    background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 400px, rgba(255, 255, 255, 1) 400px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals-mobile.png');
+    background-size: 100% 70%;
     background-repeat: no-repeat;
-    padding-top: 10%;
-    padding-bottom: 5%;
+    padding-top: 32px;
+    padding-bottom: 16px;
 }
 
 .yellow-underline {
@@ -26,11 +26,11 @@ html {
 }
 
 #vip-mobile {
-    font-size: 2.2rem;
+    font-size: 1.85rem;
 }
 
 #BBC {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
 }
 
 #instant-access {
@@ -42,6 +42,11 @@ html {
     padding: 1.25rem 1rem;
 }
 
+#play-button:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
 .even {
     background-color: #EEF5FE;
 }
@@ -51,9 +56,29 @@ html {
 }
 
 .packages-col {
+    color: #394259;
     font-size: 1.17rem;
     line-height: 2rem;
     padding: 1rem;
+}
+
+.packages-col strong {
+    color: #000;
+}
+
+.foundation-mobile-col,
+.elite-mobile-col {
+    color: #000;
+    font-weight: 800;
+    line-height: 3rem;
+}
+
+.foundation-mobile-col {
+    font-size: 2.25rem;
+}
+
+.elite-mobile-col {
+    font-size: 2.75rem;
 }
 
 .elite {
@@ -65,15 +90,21 @@ html {
 }
 
 .regular {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 1.85rem;
     margin-bottom: 2rem;
 }
 
 .row.footer h2 {
+    color: #000;
     font-size: 3rem;
     font-weight: 700;
     line-height: 4.5rem;
+}
+
+.row.footer a {
+    background-color: #FFA300;
+    border: 1px solid #CD8505;
 }
 
 .savings {
@@ -97,6 +128,10 @@ footer a {
     text-decoration: none;
 }
 
+footer a:hover {
+    text-shadow: 2px 2px #FFF;
+}
+
 .need-help {
     padding: 16px;
 }
@@ -107,11 +142,21 @@ footer a {
 
 .vip-access {
     font-size: 20px;
-    padding: 16px 0px;
+    font-weight: 800;
+    padding: 16px 30px;
 }
 
 .vip-access span {
     font-size: 18px;
+    font-weight: 600;
+}
+
+#video-thumbnail-mobile {
+    margin-top: -8%;
+}
+
+#business-row-mobile {
+    margin-top: -16%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -119,7 +164,6 @@ footer a {
     #hero {
         background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 580px, rgba(255, 255, 255, 1) 300px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
         background-size: 100%;
-        padding: 5% 0 2% 0;
     }
 
     #hero h1 {
@@ -171,8 +215,9 @@ footer a {
 
 @media only screen and (min-width: 992px) {
     #hero {
-        background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 680px, rgba(255, 255, 255, 1) 300px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
-        padding: 4% 0;
+        background-image: linear-gradient(180deg, rgba(6, 89, 203, 0.9) 665px, rgba(255, 255, 255, 1) 300px, rgba(255, 255, 255, 1) 100%), url('./img/business-strategy-success-target-goals.png');
+        background-size: 125%;
+        background-position: 20% -75%;
     }
 
     #hero h1 {
@@ -193,7 +238,16 @@ footer a {
     }
 
     #only-200 {
-        width: 35%;
+        width: 50%;
+    }
+
+    .vip-access {
+        padding: 20px 60px;
+    }
+
+    #packages {
+        background: linear-gradient(180deg, rgba(254, 254, 255, 1) 0%, rgba(237, 241, 248, 1) 50%);
+        padding-bottom: 6rem;
     }
 
     .foundation-header-col {
@@ -208,7 +262,7 @@ footer a {
     }
 
     .even.package-col.foundation-col {
-        background-color: #F2F7FE;
+        background-color: #EBF2FB;
     }
 
     .package-col.elite-col,
@@ -261,15 +315,46 @@ footer a {
         padding: 15px 25px;
     }
 
+    .transparent-background {
+        background-color: transparent !important;
+    }
+
+    .white-background {
+        background-color: #FFF;
+    }
+
+    .gray-background {
+        background-color: #FDFEFE;
+    }
+
     .regular {
         margin: 0.5rem 0;
     }
 
     .foundation-footer-col {
+        background-color: #F4F7FB;
         border-bottom: 1px solid #dfdbe0;
     }
 
     .elite-footer-col {
         box-shadow: 0 4px 13px rgb(50 50 50 / 10%);
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #hero {
+        background-position: 0 0%;
+        background-size: 100%;
+        padding: 2% 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #most-popular-desktop {
+        margin-right: 8%;
     }
 }
