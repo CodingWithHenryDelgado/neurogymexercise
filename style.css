@@ -47,6 +47,16 @@ body {
     filter: drop-shadow(5px 5px 5px #222);
 }
 
+.btn {
+    transition: ease-out 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
+    transition: ease-in 0.2s;
+}
+
 .even {
     background-color: #EEF5FE;
 }
@@ -132,6 +142,16 @@ footer a:hover {
     text-shadow: 2px 2px #FFF;
 }
 
+#email {
+    color: #727272;
+    transition: ease-in 0.2s;
+}
+
+#email:hover {
+    color: #1F1F1F;
+    transition: ease-out 0.2s;
+}
+
 .need-help {
     padding: 16px;
 }
@@ -141,6 +161,8 @@ footer a:hover {
 }
 
 .vip-access {
+    background: linear-gradient(180deg, rgba(255, 163, 0, 1) 0%, rgba(255, 122, 0, 1) 75%);
+    box-shadow: inset 0 -3px #ec5500;
     font-size: 20px;
     font-weight: 800;
     padding: 16px 24px;
