@@ -460,6 +460,36 @@
                 </div>
             </div>
         </section>
+        <div class="modal" id="popup" tabindex="-1" role="dialog" aria-labelledby="onemorestep" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button id="close-modal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div>
+                        <p class="modal-title text-danger" id="important">IMPORTANT! One more step...</p>
+                    </div>
+                    <div class="modal-body">
+                        <p class="d-block d-lg-none">Don’t leave just yet. You still need to get your membership details
+                            so you can sign in.</p>
+                        <p class="d-none d-lg-block">
+                            If you leave, <strong>you will lose $3,679 in bonuses! <br /> Click below now to
+                                save</strong> your
+                            spot for the Challenge!
+                        </p>
+                        <a href="#" id="stayonthis"
+                            class="btn text-center rounded text-decoration-none text-light vip-access">Click Here to
+                            Stay On This Page & Review This Offer
+                        </a>
+                    </div>
+                    <div class="d-block d-lg-none">
+                        <p><span id="nothanks">No thanks,</span> I don't want any personal help and I'd rather pay full
+                            price at a later time. <br /> <span class="text-decoration-underline">Take
+                                me to my membership details.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="border-top">
         <div class="container">
@@ -493,15 +523,11 @@
     </footer>
     <script>
         const getVIPAccess = document.getElementById('VIP');
+        const popUp = document.getElementById('popup');
+        const exitModal = document.getElementById('close-modal');
 
-        getVIPAccess.addEventListener('click', function () {
-            var modalId = 'exitModal';
-            if (evt.toElement === null && evt.relatedTarget === null && !localStorage.getItem('modal.' + modalId)) {
-                var modal = new bootstrap.Modal('#' + modalId);
-                modal.show();
-                localStorage.setItem('modal.' + modalId, '1');
-            }
-        })
+        getVIPAccess.addEventListener('click', function () { popUp.style.display = "block" });
+        exitModal.addEventListener('click', function () { popUp.style.display = "none" });
     </script>
 </body>
 

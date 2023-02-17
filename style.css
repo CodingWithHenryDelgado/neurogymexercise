@@ -187,6 +187,67 @@ footer a:hover {
     padding-bottom: 3rem;
 }
 
+.modal {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #FFFFFF !important;
+    color: #394259;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.modal .btn {
+    display: block;
+    margin: 15px auto 0 auto;
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.monster-modal {
+    width: 35%;
+    margin: 0 auto;
+}
+
+#important {
+    font-size: 1rem;
+    margin-top: 2.5rem;
+}
+
+#nothanks {
+    font-weight: 600;
+}
+
+.modal-content p {
+    padding: 0.25rem;
+    font-size: 0.85em;
+}
+
+.modal-content .btn {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#close-modal {
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    outline: none;
+    width: 50px;
+}
+
+#close-modal span {
+    font-size: 64px;
+    color: red;
+    position: absolute;
+    top: -32px;
+    right: 5px;
+}
+
 @media only screen and (min-width: 768px) {
 
     #hero {
@@ -399,6 +460,34 @@ footer a:hover {
     footer {
         margin-top: 0;
         padding: 32px 0;
+    }
+
+    #close-modal span {
+        font-size: 64px;
+        top: -26px;
+    }
+
+    #important {
+        font-size: 2.15rem;
+        margin-top: 5rem;
+    }
+
+    .modal-dialog {
+        max-width: 750px;
+    }
+
+    #stayonthis {
+        font-size: 1.5rem;
+        width: 525px;
+    }
+
+    .modal-body {
+        font-size: 1.75rem;
+        padding-bottom: 5rem;
+    }
+
+    .modal-body strong {
+        color: #000;
     }
 }
 
