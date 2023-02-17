@@ -484,6 +484,8 @@ footer a {
     .package-col.elite-col::before,
     .elite-header-col::before,
     .elite-footer-col::before {
+        -webkit-appearance: none;
+        -webkit-box-shadow: -15px 0 20px -20px #d2d2d2 inset;
         box-shadow: -15px 0 20px -20px #d2d2d2 inset;
         content: " ";
         height: 100%;
@@ -496,6 +498,8 @@ footer a {
     .package-col.elite-col::after,
     .elite-header-col::after,
     .elite-footer-col::after {
+        -webkit-appearance: none;
+        -webkit-box-shadow: 15px 0 20px -20px #d2d2d2 inset;
         box-shadow: 15px 0 20px -20px #d2d2d2 inset;
         content: " ";
         height: 100%;
